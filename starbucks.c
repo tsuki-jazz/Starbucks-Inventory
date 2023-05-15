@@ -3,6 +3,10 @@
 int main(){
 
     int option;
+    int productID[22] = {478, 480, 479, 873068625, 481, 2123427, 406, 2122613,
+                         409, 410, 411, 2123158, 565, 2123279, 2122167, 2122164,
+                         407, 414, 413, 412, 408, 420};
+    double price[21] = {3.26};
 
     {
         //Title
@@ -79,6 +83,23 @@ int main(){
                         printf("Mochas\n");
                         printf("21. Caffe Mocha\n");
                         printf("22. White Chocolate Mocha\n");
+
+                        {   //Prompts for user input for selecting type of hot coffee
+                            printf("To see the product's ID and cost, enter the number that corresponds to the drink: ");
+                            scanf("%d", &option);
+
+                            {
+                                switch(option)
+                                {
+                                    case 1:
+                                        printf("\nCaffe Misto\n");
+                                        printf("A one-to-one combination of fresh-brewed coffee and steamed milk add up to one distinctly delicious coffee drink remarkably mixed.\n");
+                                        printf("\nID  Price\n");
+                                        printf("%d $%.2lf", productID[0], price[0]);
+                                        break;
+                                }
+                            }
+                        }
                     }
             }               
     }
