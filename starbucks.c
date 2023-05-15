@@ -14,8 +14,6 @@ int main(){
         //Menu Options
         printf("1. Drinks\n");
         printf("2. Food\n");
-        printf("3. At Home\n");
-        printf("4. Merchandise\n\n");
     }
     
     {   
@@ -26,12 +24,32 @@ int main(){
         scanf("%d", &option);
     }
 
-    {   //Quits Program
+    {   
+        //Quits Program
         if(option == 0)
         {
-        exit(main);
+            printf("Goodbye.");
         }
 
-    } 
+            //Displays options for Drinks
+            if(option == 1)
+            {
+                printf("1. Hot Coffees\n");
+                printf("2. Hot Teas\n");
+                printf("3. Hot Drinks\n");
+                printf("4. Frappuccino Blended Beverages\n");
+                printf("5. Cold Coffees\n");
+                printf("6. Iced Teas\n");
+                printf("7. Cold Drinks\n");
+
+                {   // Prompt user input for selecting type of drink
+                    printf("Enter the number that corresponds to the drink: ");
+                    scanf("%d", &option);
+                }
+                    
+            }
+
+                
+    }
     return 0;
 }
